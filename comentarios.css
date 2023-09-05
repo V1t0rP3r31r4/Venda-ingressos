@@ -40,7 +40,7 @@ h1 {
 }
 
 textarea {
-    width: 900px;
+    width: 600px;
     height: 400px;
     color: black;
     display: flex;
@@ -87,6 +87,11 @@ button:hover {
     header {
         width: 100%;
         
+    }
+
+    textarea {
+        width: 80%;
+        height: auto;
     }
 
     .imagem-comentarios {
