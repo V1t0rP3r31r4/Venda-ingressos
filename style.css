@@ -9,7 +9,7 @@
 }
 
 header {
-    height: 90px;
+    height: 130px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,6 +68,8 @@ li:hover {
 .trailer {
     width: 90%;
     border-radius: 10px;
+    display: flex;
+    flex-wrap:wrap;
 }
 
 #sinopse {
@@ -140,12 +142,21 @@ span {
 }
 
 @media(max-width: 768px){
-    .footer-navigation {
-        display: block;
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content:end;
+        flex-direction: column;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
 
     nav {
-        display: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #banner {
@@ -156,7 +167,14 @@ span {
         width: 100%;
         height: 400px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo1 {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
     }
 
     .content {
@@ -167,13 +185,13 @@ span {
 
     .trailer {
         width: 100%;
+        flex-wrap: wrap;
     }
 
     #sinopse {
         width: 95%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     .description {
@@ -183,10 +201,14 @@ span {
     .button {
         width: 100%;
         margin-top: 30px;
+        margin-bottom: 15px;
     }
-
-    .cards-content {
-        grid-template-columns: 1fr;
-        margin-top: 150px;
+        
+    ul {
+        width: 80%;
+        flex-direction: column;
+        position:static;
+        top: 0;
+        right: 1px;
+        }
     }
-}

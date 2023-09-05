@@ -13,12 +13,13 @@
 body {
     background-image: url(./fotos/im-vengeance-the-batman-thumb-728x410.jpg);
     background-size: cover;
-    margin-block-end: 0px;
-    margin-top: 0px;
+    margin-block-end: 1px;
+    margin-top: 1px;
+    background-attachment: fixed;
     
 }
 
-h1 {
+span {
     height: 300px;
     width: 500px;
     color: black;
@@ -63,4 +64,10 @@ button {
 button:hover {
     background-color: #fff;
     color: #000;
+}
+
+@media(max-width: 768px) {
+    textarea {
+        width: 100%;
+    }
 }
